@@ -1,0 +1,100 @@
+@charset "ISO-8859-1";
+.container{
+	width: 500px;
+    text-align: center;
+    margin-top: 220px;
+    padding: 50px;
+    margin-left: 400px;
+    background-color: #7898a8;
+    border-radius:7px;
+    
+}
+.heading{
+	font-size:xxx-large;
+	opacity:0.8;
+	font-weight:bold;
+}
+div{
+	
+}
+input,.p{
+	width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 0px;
+}
+select{
+	width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 0px;
+}
+input{
+	width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0;
+    margin-left: -28px;
+    
+}
+.sql{
+	width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 0px;
+}
+label{
+	font-size: 20px;
+    font-weight: bold;
+    color: #47332c;
+}
+.formsectionA{
+	width: 300px;
+    height: auto;
+    margin-left: 95px;
+}
+.formsectionC{
+	width: 300px;
+    height: auto;
+    margin-left: 90px;
+}
+.formSectionO{
+	width: 230px;
+    height: auto;
+    margin-left: 120px;
+}
+.formSectionP{
+	width: 230px;
+    height: auto;
+    margin-left: 120px;
+}
+button,.b
+{
+	height: 28px;
+    width: 90px;
+    margin: 10px;
+    border-radius: 5px;
+    border-collapse: collapse;
+    border: 0;
+    background-color: #f7f7f7;;
+    font-weight: bold;
+    cursor: pointer;
+    color:#47332c;
+}
+button:hover,.b:hover{
+	background-color:#c5b7b1;
+}
+.question{
+	margin-top: 30px;
+    margin-left: 130px;
+    width: 222px;
+    height: auto;
+}
+textarea{
+	height: 150px;
+    width: 300px;
+    border-radius: 10px;
+}
