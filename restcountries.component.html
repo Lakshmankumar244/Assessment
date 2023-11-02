@@ -1,0 +1,50 @@
+<table class="table table-striped">
+  <thead>
+      <tr>
+        <th scope="col">S.NO</th>
+        <th scope="col">COMMON NAME</th>
+        <th scope="col">OFFICIAL NAME</th>
+        <th scope="col">AREA</th>
+        <th scope="col">CAPITAL</th>
+        <th scope="col">POPULATION</th>
+        <th scope="col">REGION</th>
+        <th scope="col">INDEPENDENT</th>
+        <!-- <th scope="col">CURRENCIES</th> -->
+        <th scope="col">TIMEZONES</th>
+        <th scope="col">START OF WEEK</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr *ngFor="let r1 of Response;index as i">
+          <th scope="row">{{i+1}}</th>
+                <td>
+                   <div *ngFor="let r2 of r1.name | keyvalue">
+            <p *ngIf="r2.key=='common'">{{r2.value}}</p>
+          </div>
+      </td>
+          <td>
+              <div *ngFor="let r2 of r1.name|keyvalue">
+              <p *ngIf="r2.key=='official'">{{r2.value}}</p>
+                      </div>
+                  </td>
+                      <td>{{r1.area}}</td>
+                      <td>{{r1.capital}}</td>
+                      <td>{{r1.population}}</td>
+                      <td>{{r1.region}}</td>
+                      <td>{{r1.independent}}</td>
+                      <td>{{r1.timezones[0]}}</td>
+                      <td>{{r1.startOfWeek}}</td>
+          </tr>
+      
+        <!-- <td><p *ngFor="let r1 of Response">
+          <p *ngFor="let r2 of r1.currencies | keyvalue">
+            <p *ngIf="r2.key=='USD'">
+              <p *ngFor="let r3 of r2.value | keyvalue">
+                <p *ngIf="r3.key=='name'">{{r3.value}}</p>
+              </p>
+            </p>
+          </p>
+        </p></td> -->
+    </tbody>
+  </table>
